@@ -1,3 +1,3 @@
 DROP DATABASE IF EXISTS library;
-CREATE DATABASE library;
-use library;
+CREATE DATABASE public_library;
+use public_library;
