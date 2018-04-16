@@ -8,7 +8,6 @@ CREATE TABLE Item
 item_id INT(6),
 date_of_purchase date,
 reservation_status boolean,
-title_id INT(5),
 price decimal(6,2),
 self text,
 compartment text,
@@ -78,4 +77,21 @@ CONSTRAINT fk_borrowing_id FOREIGN KEY(borrowing_id)
 REFERENCES Borrowing(borrowing_id),		
 CONSTRAINT fk_customer0_id FOREIGN KEY(cust_id)
 REFERENCES Customer(cust_id)
+);
+
+DROP TABLE IF EXISTS Publisher;
+CREATE TABLE Publisher
+(
+publisher_id INT(5),
+item_id INT(6),
+title_id INT(5),
+publisher_name VARCHAR(55),
+published_count INT(4),
+
+CONSTRAINT publisher_pk
+PRIMARY KEY(publisher_id) ,
+CONSTRAINT fk_item2_id FOREIGN KEY(item_id)
+REFERENCES Item(item_id),
+CONSTRAINT fk_title_id FOREIGN KEY(title_id)
+REFERENCES Title(title_id)
 );
