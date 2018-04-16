@@ -35,10 +35,11 @@ reservation_id INT(5),
 
 CONSTRAINT title_pk
 PRIMARY KEY(title_id),
- CONSTRAINT fk_item_id FOREIGN KEY(item_id)
+ CONSTRAINT fk_item0_id FOREIGN KEY(item_id)
 REFERENCES Item(item_id)	
 );
 
+DROP TABLE IF EXISTS Borrowing;
 CREATE TABLE Borrowing
 (
 borrowing_id INT(5),
@@ -57,6 +58,7 @@ PRIMARY KEY(borrowing_id)
 /*add a foreign key to department id and reservation id after all tables are created using an update command */
 );
 
+DROP TABLE IF EXISTS Reservation;
 CREATE TABLE Reservation
 (
 borrowing_id INT(5),
@@ -68,7 +70,7 @@ queue INT(2),
 
 CONSTRAINT reservation_pk
 PRIMARY KEY(reservation_id) ,
-CONSTRAINT fk_item_id FOREIGN KEY(item_id)
+CONSTRAINT fk_item1_id FOREIGN KEY(item_id)
 REFERENCES Item(item_id),
 CONSTRAINT fk_borrowing_id FOREIGN KEY(borrowing_id)
 REFERENCES Borrowing(borrowing_id)		
