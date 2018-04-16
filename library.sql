@@ -8,9 +8,9 @@ CREATE TABLE Item
 item_id INT(6),
 date_of_purchase date,
 reservation_status boolean,
-price decimal(6,2),
-self text,
-compartment text,
+price decimal(7,2),
+self boolean,
+compartment VARCHAR(21),
 borrow_status boolean,
 
 CONSTRAINT item_pk
@@ -25,7 +25,7 @@ title_name VARCHAR(120),
 title_type VARCHAR(11),
 title_id INT(5),
 page_number INT(6),
-copy_amount INT(4),
+copy_amount INT(5),
 
 CONSTRAINT title_pk
 PRIMARY KEY(title_id),
@@ -36,12 +36,11 @@ REFERENCES Item(item_id)
 DROP TABLE IF EXISTS Customer;
 CREATE TABLE Customer
 (
-address VARCHAR(33),
-full_name VARCHAR(29),
+address VARCHAR(133),
+full_name VARCHAR(129),
 borrow_count INT(1),
 reservation_spot INT(2),
 cust_id INT(5),
-
 
 CONSTRAINT customer_pk
 PRIMARY KEY(cust_id) 
@@ -50,13 +49,16 @@ PRIMARY KEY(cust_id)
 DROP TABLE IF EXISTS Borrowing;
 CREATE TABLE Borrowing
 (
+title_id INT(5),
 borrowing_id INT(5),
-record VARCHAR(70),
+record VARCHAR(170),
 borrowing_date date,
 return_date date,
 
 CONSTRAINT borrowing_pk
-PRIMARY KEY(borrowing_id) 
+PRIMARY KEY(borrowing_id) ,
+CONSTRAINT fk_title5_id FOREIGN KEY(title_id)
+REFERENCES Title(title_id)
 );
 
 DROP TABLE IF EXISTS Reservation;
