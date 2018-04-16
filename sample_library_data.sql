@@ -61,4 +61,40 @@ VALUES(715810,'A Few Good Men','Movie',63815,NULL, 1);
 INSERT INTO Title
 VALUES(252663,'Lawrence of Arabia','Movie',5095,NULL, 3);
 
+INSERT INTO Customer
+VALUES('1396 Briarcliff Road Bolingbrook IL 66810','Chee Kin Chan',0,NULL,24329);
+
+INSERT INTO Customer
+VALUES('1211 Plainfield Road Joliet IL 60540','Ben Brudenell',2,1,29088);
+
+INSERT INTO Customer
+VALUES('1055 E Gartner Road Naperville IL 96139','Simon Wood',1,NULL,29141);
+
+INSERT INTO Customer
+VALUES('2815 Mistflower Lane Naperville IL 60564','Andrew Hamilton',3,NULL,22700);
+
+
+INSERT INTO Customer
+VALUES('1319 N Lake Street Aurora IL 66221','Victoria Lord',1,12,82790);
+
+
+INSERT INTO Customer
+VALUES('4117 Stableford Lane Paris TX','Lara Derham',4,5,56510);
+
+
+INSERT INTO Customer
+VALUES('3536 Scotsdale Circle Wheaton IL','Jeanette Manifold',3,2,77405);
+
+
+INSERT INTO Customer
+VALUES('3019 Naper Boulevard Deering IL','Genevieve McMahon',1,1,5486);
+
+
+INSERT INTO Customer
+VALUES('1600 Pennsylvania Avenue Bartlett IL','Christine Koole',5,NULL,15828);
+
+
+INSERT INTO Customer
+VALUES('411 Centennial Drive Saint Louis MO','Joel Beach',7,11,88683);
+
 
