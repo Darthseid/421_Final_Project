@@ -56,3 +56,21 @@ CONSTRAINT borrowing_pk
 PRIMARY KEY(borrowing_id) 
 /*add a foreign key to department id and reservation id after all tables are created using an update command */
 );
+
+CREATE TABLE Reservation
+(
+borrowing_id INT(5),
+item_id INT(6),
+title_id INT(5),
+cust_id INT(5),
+reservation_id INT(5),
+queue INT(2),
+
+CONSTRAINT reservation_pk
+PRIMARY KEY(reservation_id) ,
+CONSTRAINT fk_item_id FOREIGN KEY(item_id)
+REFERENCES Item(item_id),
+CONSTRAINT fk_borrowing_id FOREIGN KEY(borrowing_id)
+REFERENCES Borrowing(borrowing_id)		
+/*add a foreign key to customer id after all tables are created using an update command */
+);
