@@ -30,3 +30,35 @@ VALUES(733112,'1999-12-31',0,0.50,0,'Bottom Shelf', 0);
 
 INSERT INTO Item
 VALUES(973722,'2012-12-21',1,103.97,0,'First Shelf', 0);
+
+INSERT INTO Title
+VALUES(973722,'American Gods','Book',1561,645321,6);
+
+INSERT INTO Title
+VALUES(733112,'One Second After','Book',86380,543, 7);
+
+INSERT INTO Title
+VALUES(753749,'Wonder Woman','Movie',17810,NULL,2);
+
+INSERT INTO Title
+VALUES(307366,'A Farewell To Arms','Book',38735,98, 5);
+
+INSERT INTO Title
+VALUES(52062,'What is the What','Book',43958,392, 3);
+
+INSERT INTO Title
+VALUES(609672,'The Last of the Mohicans','Book',49471,255,8);
+
+INSERT INTO Title
+VALUES(243139,'The Shawshank Redemption','Movie',59500,NULL, 1);
+
+INSERT INTO Title
+VALUES(296026,'Major League','Movie',63678,NULL, 4);
+
+INSERT INTO Title
+VALUES(715810,'A Few Good Men','Movie',63815,NULL, 1);
+
+INSERT INTO Title
+VALUES(252663,'Lawrence of Arabia','Movie',5095,NULL, 3);
+
+
