@@ -97,4 +97,33 @@ VALUES('1600 Pennsylvania Avenue Bartlett IL','Christine Koole',5,NULL,15828);
 INSERT INTO Customer
 VALUES('411 Centennial Drive Saint Louis MO','Joel Beach',7,11,88683);
 
+INSERT INTO Borrowing
+VALUES(1561,96896,'Returned in Good Piece','2004-02-28','2004-03-29');
+
+INSERT INTO Borrowing
+VALUES(86380,87482,'Returned in Good Piece','2009-12-23','2010-01-22');
+
+INSERT INTO Borrowing
+VALUES(17810,47595,'Minor Scratch on inner rim','2017-09-23','2017-11-23');
+
+INSERT INTO Borrowing
+VALUES(38735,26168,'Tear on top right corner on page 74','2000-01-02','2000-02-02');
+
+INSERT INTO Borrowing
+VALUES(43958,22736,'Severe Water Damage','2006-05-31','2006-06-30');
+
+INSERT INTO Borrowing
+VALUES(49471,61180,'Returned in Good Piece','1997-08-25','1997-09-25');
+
+INSERT INTO Borrowing
+VALUES(59500,31947,'Broken into five pieces','1988-04-02','1988-05-02');
+
+INSERT INTO Borrowing
+VALUES(63678,13709,'The disk stops spinning after fourteen minutes of use.','2003-06-21','2003-07-21');
+
+INSERT INTO Borrowing
+VALUES(63815,93665,'Returned in Good Piece','2014-03-16','2014-04-16');
+
+INSERT INTO Borrowing
+VALUES(5095,8151,'Gives a Disk cannot be read error','2013-07-12','2013-10-12');
 
