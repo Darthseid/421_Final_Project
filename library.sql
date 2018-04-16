@@ -133,6 +133,32 @@ CONSTRAINT fk_publisher1_id FOREIGN KEY(publisher_id)
 REFERENCES Publisher(publisher_id),
 CONSTRAINT fk_item2_id FOREIGN KEY(item_id)
 REFERENCES Item(item_id),
-CONSTRAINT fk_author_id FOREIGN KEY(author_id)
+CONSTRAINT fk_author0_id FOREIGN KEY(author_id)
+REFERENCES Author(author_id)
+);
+
+DROP TABLE IF EXISTS Movie;
+CREATE TABLE Movie
+(
+publisher_id INT(5),
+publisher_name VARCHAR(55),
+author_name VARCHAR(45),
+author_id INT(5),
+title_name VARCHAR(120),
+title_id INT(5),
+item_id INT(6),
+movie_id INT(13),
+genre VARCHAR(25),
+publishing_date date,
+
+CONSTRAINT movie_pk
+PRIMARY KEY(movie_id) ,
+CONSTRAINT fk_title3_id FOREIGN KEY(title_id)
+REFERENCES Title(title_id),
+CONSTRAINT fk_publisher2_id FOREIGN KEY(publisher_id)
+REFERENCES Publisher(publisher_id),
+CONSTRAINT fk_item3_id FOREIGN KEY(item_id)
+REFERENCES Item(item_id),
+CONSTRAINT fk_author1_id FOREIGN KEY(author_id)
 REFERENCES Author(author_id)
 );
