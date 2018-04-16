@@ -90,8 +90,23 @@ published_count INT(4),
 
 CONSTRAINT publisher_pk
 PRIMARY KEY(publisher_id) ,
-CONSTRAINT fk_item2_id FOREIGN KEY(item_id)
-REFERENCES Item(item_id),
-CONSTRAINT fk_title_id FOREIGN KEY(title_id)
+CONSTRAINT fk_title0_id FOREIGN KEY(title_id)
 REFERENCES Title(title_id)
+);
+
+DROP TABLE IF EXISTS Author;
+CREATE TABLE Author
+(
+publisher_id INT(5),
+title_id INT(5),
+author_name VARCHAR(45),
+works_count INT(4),
+author_id INT(5),
+
+CONSTRAINT author_pk
+PRIMARY KEY(author_id) ,
+CONSTRAINT fk_title1_id FOREIGN KEY(title_id)
+REFERENCES Title(title_id),
+CONSTRAINT fk_publisher_id FOREIGN KEY(publisher_id)
+REFERENCES Publisher(publisher_id)
 );
