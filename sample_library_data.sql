@@ -1,2 +1,32 @@
-INSERT INTO library.book (CustomerName, ContactName, Address, City, PostalCode, Country)
-VALUES ('Cardinal', 'Tom B. Erichsen', 'Skagen 21', 'Stavanger', '4006', 'Norway');
+use Final_Library;
+
+
+INSERT INTO Item
+VALUES(252663,'1987-10-27',0,8.95,1,'Top Shelf', 1);
+
+INSERT INTO Item
+VALUES(715810,'2007-01-02',1,38.33,0,'Bottom Shelf', 1);
+
+INSERT INTO Item
+VALUES(296026,'2018-03-09',1,0.00,1,'Second Shelf', 1);
+
+INSERT INTO Item
+VALUES(243139,'1996-08-14',1,16.99,1,'First Shelf', 1);
+
+INSERT INTO Item
+VALUES(609672,'2001-09-11',0,0.00,0,'Third Shelf', 0);
+
+INSERT INTO Item
+VALUES(52062,'2005-07-07',1,20.20,0,'Top Shelf', 1);
+
+INSERT INTO Item
+VALUES(307366,'2008-11-04',1,6.77,1,'Bottom Shelf', 1);
+
+INSERT INTO Item
+VALUES(753749,'2016-11-06',1,1.00,1,'Top Shelf', 0);
+
+INSERT INTO Item
+VALUES(733112,'1999-12-31',0,0.50,0,'Bottom Shelf', 0);
+
+INSERT INTO Item
+VALUES(973722,'2012-12-21',1,103.97,0,'First Shelf', 0);
