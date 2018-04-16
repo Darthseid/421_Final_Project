@@ -1,0 +1,8 @@
+1.  Write up a client report on what they want for their database.
+2. Create a composite Entity-Relationship diagram of the database with accompanying assumptions and schema.
+3. Create the Library database with all tables and columns in the diagram.
+4. Put 10 rows within every table of the database
+5. Run five database queries that test each table entity. A simple query. An inner join query. A join subquery. A HAVING GROUP WHERE query. And an invalid query.
+6. Type up a project explanation on how to use the database.
+7. Add DDL, DML and SELECT queries.
+8. Create a ten minute powerpoint presentation about business requirements, uses, constraints, and assumptions involved in the library database.
