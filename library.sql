@@ -36,5 +36,23 @@ reservation_id INT(5),
 CONSTRAINT title_pk
 PRIMARY KEY(title_id),
  CONSTRAINT fk_item_id FOREIGN KEY(item_id)
-REFERENCES item(item_id)	
+REFERENCES Item(item_id)	
+);
+
+CREATE TABLE Borrowing
+(
+borrowing_id INT(5),
+record VARCHAR(70),
+borrowing_date date,
+return_date date,
+page_number INT(6),
+copy_amount INT(4),
+publisher_id INT(5),
+author_id INT(5),
+reservation_id INT(5),
+department_id INT(2),
+
+CONSTRAINT borrowing_pk
+PRIMARY KEY(borrowing_id) 
+/*add a foreign key to department id and reservation id after all tables are created using an update command */
 );
