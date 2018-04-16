@@ -162,3 +162,20 @@ REFERENCES Item(item_id),
 CONSTRAINT fk_author1_id FOREIGN KEY(author_id)
 REFERENCES Author(author_id)
 );
+
+DROP TABLE IF EXISTS Department;
+CREATE TABLE Department
+(
+department_id INT(2),
+location VARCHAR(60),
+item_count INT(6),
+title_id INT(5),
+item_id INT(6),
+
+CONSTRAINT department_pk
+PRIMARY KEY(department_id) ,
+CONSTRAINT fk_title4_id FOREIGN KEY(title_id)
+REFERENCES Title(title_id),
+CONSTRAINT fk_item4_id FOREIGN KEY(item_id)
+REFERENCES Item(item_id)
+);
