@@ -1,6 +1,5 @@
 use Final_Library;
 
-
 INSERT INTO Item
 VALUES(252663,'1987-10-27',0,8.95,1,'Top Shelf', 1);
 
