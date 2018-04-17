@@ -48,34 +48,45 @@ VALUES(952173,'2011-12-21',1,31.11,0,'First Shelf', 0);
 
 INSERT INTO Title
 VALUES(973722,'American Gods','Book',1561,645321,6);
-
 INSERT INTO Title
 VALUES(733112,'One Second After','Book',86380,543, 7);
-
 INSERT INTO Title
 VALUES(753749,'Wonder Woman','Movie',17810,NULL,2);
-
 INSERT INTO Title
 VALUES(307366,'A Farewell To Arms','Book',38735,98, 5);
-
 INSERT INTO Title
 VALUES(52062,'What is the What','Book',43958,392, 3);
-
 INSERT INTO Title
 VALUES(609672,'The Last of the Mohicans','Book',49471,255,8);
-
 INSERT INTO Title
 VALUES(243139,'The Shawshank Redemption','Movie',59500,NULL, 1);
-
 INSERT INTO Title
 VALUES(296026,'Major League','Movie',63678,NULL, 4);
-
 INSERT INTO Title
 VALUES(715810,'A Few Good Men','Movie',63815,NULL, 1);
-
 INSERT INTO Title
 VALUES(252663,'Lawrence of Arabia','Movie',5095,NULL, 3);
 
+INSERT INTO Title
+VALUES(887696,'Ben-Hur','Movie',29219,NULL, 11);
+INSERT INTO Title
+VALUES(884303,'Stanford Prison Experiment','Movie',98406,NULL, 1);
+INSERT INTO Title
+VALUES(880124,'The Good, The Bad, and The Ugly','Movie',93297,NULL, 5);
+INSERT INTO Title
+VALUES(594280,'Amistad','Movie',295,NULL, 1);
+INSERT INTO Title
+VALUES(801946,'Blues Brothers','Movie',87771,NULL, 6);
+INSERT INTO Title
+VALUES(36325,'Murder in Mesopotamia','Book',84035,56, 35);
+INSERT INTO Title
+VALUES(916506,'Heart of Darkness','Book',43806,176, 24);
+INSERT INTO Title
+VALUES(826524,'Moneyball','Book',16369,208, 2);
+INSERT INTO Title
+VALUES(887050,'How to Win Friends and Influence People','Book',1446,127, 17);
+INSERT INTO Title
+VALUES(952173,'Orthodoxy','Book',39953,188, 1);
 
 
 
