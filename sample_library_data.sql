@@ -230,3 +230,17 @@ INSERT INTO Author
 VALUES(42850,63815,'Marc Butler',101, 18679);
 INSERT INTO Author
 VALUES(43687,5095,'John Christie',3, 55780);
+
+
+
+
+INSERT INTO Book
+VALUES(93423,'Brother Incorporated','Lexie Durbridge',3330, 'American Gods',1561,252663,571610302808,'Science Fiction','2002-04-05');
+INSERT INTO Book
+VALUES(21849,'Oscorp','Andrew Hale',26250, 'One Second After',86380,715810,560801259868,'Dark Fantasy','1609-02-08');
+INSERT INTO Book
+VALUES(38348,'GL Corps','James Field',19874, 'A Farewell To Arms',38735,296026,501028118699,'Historical Fiction','1811-12-04');
+INSERT INTO Book
+VALUES(81793,'Waynetech','Stephen Beeson',19971, 'What is the What',43958,243139,778452652857,'Religious Text','2013-05-09');
+INSERT INTO Book
+VALUES(88994,'Lexcorp','David Bosnich',16745, 'The Last of the Mohicans',49471,609672,385845345557,'Textbook','1963-08-28');
