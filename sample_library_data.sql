@@ -31,6 +31,9 @@ VALUES(733112,'1999-12-31',0,0.50,0,'Bottom Shelf', 0);
 INSERT INTO Item
 VALUES(973722,'2012-12-21',1,103.97,0,'First Shelf', 0);
 
+
+
+
 INSERT INTO Title
 VALUES(973722,'American Gods','Book',1561,645321,6);
 
@@ -60,6 +63,10 @@ VALUES(715810,'A Few Good Men','Movie',63815,NULL, 1);
 
 INSERT INTO Title
 VALUES(252663,'Lawrence of Arabia','Movie',5095,NULL, 3);
+
+
+
+
 
 INSERT INTO Customer
 VALUES('1396 Briarcliff Road Bolingbrook IL 66810','Chee Kin Chan',0,NULL,24329);
@@ -97,6 +104,10 @@ VALUES('1600 Pennsylvania Avenue Bartlett IL','Christine Koole',5,NULL,15828);
 INSERT INTO Customer
 VALUES('411 Centennial Drive Saint Louis MO','Joel Beach',7,11,88683);
 
+
+
+
+
 INSERT INTO Borrowing
 VALUES(1561,96896,'Returned in Good Piece','2004-02-28','2004-03-29');
 
@@ -126,6 +137,10 @@ VALUES(63815,93665,'Returned in Good Piece','2014-03-16','2014-04-16');
 
 INSERT INTO Borrowing
 VALUES(5095,8151,'Gives a Disk cannot be read error','2013-07-12','2013-10-12');
+
+
+
+
 
 INSERT INTO Reservation
 VALUES(96896,252663,1561,24329,53890,0);
@@ -157,6 +172,10 @@ VALUES(93665,733112,63815,15828,89077,3);
 INSERT INTO Reservation
 VALUES(8151,973722,5095,88683,53450,9);
 
+
+
+
+
 INSERT INTO Publisher
 VALUES(93423,252663,1561,'Brother Incorporated',30);
 
@@ -186,3 +205,28 @@ VALUES(42850,733112,63815,'Ininovels', 87);
 
 INSERT INTO Publisher
 VALUES(43687,973722,5095,'Penguin Books', 19350);
+
+
+
+
+
+INSERT INTO Author
+VALUES(93423,1561,'Lexie Durbridge',1, 3330);
+INSERT INTO Author
+VALUES(21849,86380,'Andrew Hale',15, 26250);
+INSERT INTO Author
+VALUES(85940,17810,'Simon Hale',51, 35607);
+INSERT INTO Author
+VALUES(38348,38735,'James Field',212, 19874);
+INSERT INTO Author
+VALUES(81793,43958,'Stephen Beeson',6, 19971);
+INSERT INTO Author
+VALUES(88994,49471,'David Bosnich',28, 16745);
+INSERT INTO Author
+VALUES(62672,59500,'Diana Bray',959, 95787);
+INSERT INTO Author
+VALUES(67225,63678,'Stuart Bryson',1, 75917);
+INSERT INTO Author
+VALUES(42850,63815,'Marc Butler',101, 18679);
+INSERT INTO Author
+VALUES(43687,5095,'John Christie',3, 55780);
