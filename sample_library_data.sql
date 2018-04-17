@@ -1,5 +1,6 @@
 use Final_Library;
 
+
 INSERT INTO Item
 VALUES(252663,'1987-10-27',0,8.95,1,'Top Shelf', 1);
 
@@ -243,3 +244,23 @@ INSERT INTO Book
 VALUES(81793,'Waynetech','Stephen Beeson',19971, 'What is the What',43958,243139,778452652857,'Religious Text','2013-05-09');
 INSERT INTO Book
 VALUES(88994,'Lexcorp','David Bosnich',16745, 'The Last of the Mohicans',49471,609672,385845345557,'Textbook','1963-08-28');
+
+
+
+
+INSERT INTO Movie
+VALUES(85940,'Nova Corps','Simon Hale',35607, 'Wonder Woman',17810,52062,5584534,'Horror','1963-08-28');
+INSERT INTO Movie
+VALUES(62672,'Stark Industries','Diana Bray',95787, 'The Shawshank Redemption',59500,307366,3412797,'Tragedy','2018-01-15');
+INSERT INTO Movie
+VALUES(67225,'Weyland-Yutani','Stuart Bryson',75917, 'Major League',63678,753749,9317720,'Comedy','2001-06-17');
+INSERT INTO Movie
+VALUES(42850,'Ininovels','Marc Butler',18679, 'A Few Good Men',63815,733112,9556108,'Action','2015-03-31');
+INSERT INTO Movie
+VALUES(43687,'Penguin Books','John Christie',55780, 'Lawrence of Arabia',5095,973722,9145626,'Courtroom Drama','1899-12-26');
+
+/*Books to add,Heart of Darkness, Murder in Mesopotamia, Goldfinger,Ender's Shadow, How to Win Friends and Influence People,
+Movies to add: Stanford Prison Experiment, Amistad, Serenity, Ben-Hur(1959), Casablanca
+Publishers to add: Latveria, Wakanda, Genosha, Themyscira, Asgard, Krypton, Vegeta, Galt, Cybertron, Spinal Tap.
+
+
