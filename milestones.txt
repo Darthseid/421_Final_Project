@@ -6,3 +6,4 @@
 6. Type up a project explanation on how to use the database.
 7. Add DDL, DML and SELECT queries.
 8. Create a ten minute powerpoint presentation about business requirements, uses, constraints, and assumptions involved in the library database.
+9. Normalize Tables.
