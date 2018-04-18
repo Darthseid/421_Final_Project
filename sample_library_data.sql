@@ -69,6 +69,7 @@ VALUES(715810,'A Few Good Men','Movie',63815,NULL, 1);
 INSERT INTO Title
 VALUES(252663,'Lawrence of Arabia','Movie',5095,NULL, 3);
 
+
 INSERT INTO Title
 VALUES(887696,'Ben-Hur','Movie',29219,NULL, 11);
 INSERT INTO Title
@@ -306,6 +307,16 @@ VALUES(81793,'Waynetech','Stephen Beeson',19971, 'What is the What',43958,243139
 INSERT INTO Book
 VALUES(88994,'Lexcorp','David Bosnich',16745, 'The Last of the Mohicans',49471,609672,385845345557,'Textbook','1963-08-28');
 
+INSERT INTO Book
+VALUES(9276,'Asgard','Jack Thompson',38093, 'Murder in Mesopotamia',84035,887696,874079240539,'Textbook','1989-06-23');
+INSERT INTO Book
+VALUES(905,'Themyscira','Lionel Ritchie',20946, 'Heart of Darkness',43806,884303,596976414673,'Steampunk','1387-06-01');
+INSERT INTO Book
+VALUES(21665,'Congruent','Tom Brady',35986, 'Moneyball',16369,880124,266230259337,'Self-Help','1963-12-30');
+INSERT INTO Book
+VALUES(81553,'Orthogonal','George Lopez',50881, 'How to Win Friends and Influence People',1446,594280,557268095320,'Owner Manual','2017-10-10');
+INSERT INTO Book
+VALUES(52088,'Vice','Francis Keske',65212, 'Orthodoxy',39953,801946,937891261365,'Horror','2018-07-04');
 
 
 
