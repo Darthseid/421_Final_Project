@@ -22,3 +22,6 @@ HAVING Movie.genre = 'Horror';
 SELECT location,audiobook
 FROM Department
 WHERE location = 'Street';
+
+ALTER TABLE Customer
+ADD alerted boolean;
