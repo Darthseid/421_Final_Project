@@ -13,3 +13,8 @@ WHERE publishing_date < (SELECT publishing_date
 FROM Book
 WHERE title_name = 'Moneyball')
 ; 
+
+SELECT publisher_name, author_name, Movie.genre
+FROM Movie
+GROUP BY publisher_name
+HAVING Movie.genre = 'Horror';
