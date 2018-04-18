@@ -18,3 +18,7 @@ SELECT publisher_name, author_name, Movie.genre
 FROM Movie
 GROUP BY publisher_name
 HAVING Movie.genre = 'Horror';
+
+SELECT location,audiobook
+FROM Department
+WHERE location = 'Street';
