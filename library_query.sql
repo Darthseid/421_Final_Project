@@ -25,3 +25,19 @@ WHERE location = 'Street';
 
 ALTER TABLE Customer
 ADD alerted boolean;
+
+Update Customer
+SET alerted = 1
+WHERE reservation_spot = 1 and (
+SELECT queue
+FROM Reservation
+WHERE queue = 0 and (
+SELECT return_date
+FROM Borrowing
+WHERE return_date = NOW()
+)
+)
+;
+
+SELECT *
+FROM Customer;
