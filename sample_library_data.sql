@@ -1,6 +1,5 @@
 use Final_Library;
 
-
 INSERT INTO Item
 VALUES(252663,'1987-10-27',0,8.95,1,'Top Shelf', 1);
 INSERT INTO Item
@@ -245,7 +244,7 @@ VALUES(13209,826524,1446,'Scandal', 4245);
 INSERT INTO Publisher
 VALUES(32661,887050,39953,'Apart', 25112);
 INSERT INTO Publisher
-VALUES(90336,997799,57562,'Seussters', 242);
+VALUES(90336,997799,57562,'20th Century Fox', 242);
 
 
 
@@ -331,8 +330,17 @@ VALUES(42850,'Ininovels','Marc Butler',18679, 'A Few Good Men',63815,733112,9556
 INSERT INTO Movie
 VALUES(43687,'Penguin Books','John Christie',55780, 'Lawrence of Arabia',5095,973722,9145626,'Courtroom Drama','1899-12-26');
 
-/*Books to add,Heart of Darkness, Murder in Mesopotamia, Goldfinger,Ender's Shadow, How to Win Friends and Influence People,
-Movies to add: Stanford Prison Experiment, Amistad, Serenity, Ben-Hur(1959), Casablanca
-Publishers to add: Latveria, Wakanda, Genosha, Themyscira, Asgard, Krypton, Vegeta, Galt, Cybertron, Spinal Tap.
+
+INSERT INTO Movie
+VALUES(9276,'Macmillan','Jack Medina',46295, 'Ben-Hur',29219,36325,436152,'Courtroom Drama','1959-11-18');
+INSERT INTO Movie
+VALUES(61061,'Dunder Mifflin','Anna Peck',10818, 'Stanford Prison Experiment',98406,916506,2402568,'Documentary','1992-01-30');
+INSERT INTO Movie
+VALUES(19220,'Scandal','Nigella Lawson',60430, 'The Good, The Bad, and The Ugly',93297,826524,4620185,'Biopic','1964-07-06');
+INSERT INTO Movie
+VALUES(13209,'Apart','Drake Bell',35964, 'Amistad',295,887050,7190925,'Adventure','1988-10-25');
+INSERT INTO Movie
+VALUES(32661,'20th Century Fox','Kanye West',37588, 'Blues Brothers',87771,952173,2074011,'Educational','2011-11-11');
+
 
 
