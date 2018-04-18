@@ -43,6 +43,8 @@ INSERT INTO Item
 VALUES(887050,'2017-05-05',1,20.44,0,'Top Shelf', 0);
 INSERT INTO Item
 VALUES(952173,'2011-12-21',1,31.11,0,'First Shelf', 0);
+INSERT INTO Item
+VALUES(997799,'2015-09-02',1,55.21,0,'Top Shelf', 0); /* do not copy this one */
 
 
 
@@ -87,6 +89,8 @@ INSERT INTO Title
 VALUES(887050,'How to Win Friends and Influence People','Book',1446,127, 17);
 INSERT INTO Title
 VALUES(952173,'Orthodoxy','Book',39953,188, 1);
+INSERT INTO Title
+VALUES(997799,'The Girl with the Dragon Tatoo','Book',57562,616, 19); /* do not copy this one */
 
 
 
@@ -201,34 +205,46 @@ VALUES(8151,973722,5095,88683,53450,9);
 
 INSERT INTO Publisher
 VALUES(93423,252663,1561,'Brother Incorporated',30);
-
 INSERT INTO Publisher
 VALUES(21849,715810,86380,'Oscorp', 407);
-
 INSERT INTO Publisher
 VALUES(85940,296026,17810,'Nova Corps', 2);
-
 INSERT INTO Publisher
 VALUES(38348,243139,38735,'GL Corps', 19);
-
 INSERT INTO Publisher
 VALUES(81793,609672,43958,'Waynetech', 107);
-
 INSERT INTO Publisher
 VALUES(88994,52062,49471,'Lexcorp', 9001);
-
 INSERT INTO Publisher
 VALUES(62672,307366,59500,'Stark Industries', 10679);
-
 INSERT INTO Publisher
 VALUES(67225,753749,63678,'Weyland-Yutani', 704);
-
 INSERT INTO Publisher
 VALUES(42850,733112,63815,'Ininovels', 87);
-
 INSERT INTO Publisher
 VALUES(43687,973722,5095,'Penguin Books', 19350);
 
+
+INSERT INTO Publisher
+VALUES(9276,887696,29219,'Asgard', 12);
+INSERT INTO Publisher
+VALUES(905,884303,98406,'Themyscira', 537);
+INSERT INTO Publisher
+VALUES(21665,880124,93297,'Congruent', 8908);
+INSERT INTO Publisher
+VALUES(81553,594280,295,'Orthogonal', 1567);
+INSERT INTO Publisher
+VALUES(52088,801946,87771,'Vice', 1);
+INSERT INTO Publisher
+VALUES(61061,36325,43806,'Macmillan', 25);
+INSERT INTO Publisher
+VALUES(19220,916506,16369,'Dunder Mifflin', 1321);
+INSERT INTO Publisher
+VALUES(13209,826524,1446,'Scandal', 4245);
+INSERT INTO Publisher
+VALUES(32661,887050,39953,'Apart', 25112);
+INSERT INTO Publisher
+VALUES(90336,997799,57562,'Seussters', 242);
 
 
 
