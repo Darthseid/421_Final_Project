@@ -123,7 +123,7 @@ author_id INT(5),
 title_name VARCHAR(120),
 title_id INT(5),
 item_id INT(6),
-book_id INT(13),
+book_id bigint(13),
 genre VARCHAR(25),
 publishing_date date,
 
