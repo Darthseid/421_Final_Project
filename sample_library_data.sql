@@ -20,8 +20,6 @@ INSERT INTO Item
 VALUES(733112,'1999-12-31',0,0.50,0,'Bottom Shelf', 0);
 INSERT INTO Item
 VALUES(973722,'2012-12-21',1,103.97,0,'First Shelf', 0);
-
-
 INSERT INTO Item
 VALUES(887696,'2016-11-25',1,10.00,0,'Bottom Shelf', 0);
 INSERT INTO Item
@@ -43,8 +41,7 @@ VALUES(887050,'2017-05-05',1,20.44,0,'Top Shelf', 0);
 INSERT INTO Item
 VALUES(952173,'2011-12-21',1,31.11,0,'First Shelf', 0);
 INSERT INTO Item
-VALUES(997799,'2015-09-02',1,55.21,0,'Top Shelf', 0); /* do not copy this one */
-
+VALUES(997799,'2015-09-02',1,55.21,0,'Top Shelf', 0); 
 
 
 INSERT INTO Title
@@ -67,8 +64,6 @@ INSERT INTO Title
 VALUES(715810,'A Few Good Men','Movie',63815,NULL, 1);
 INSERT INTO Title
 VALUES(252663,'Lawrence of Arabia','Movie',5095,NULL, 3);
-
-
 INSERT INTO Title
 VALUES(887696,'Ben-Hur','Movie',29219,NULL, 11);
 INSERT INTO Title
@@ -90,78 +85,48 @@ VALUES(887050,'How to Win Friends and Influence People','Book',1446,127, 17);
 INSERT INTO Title
 VALUES(952173,'Orthodoxy','Book',39953,188, 1);
 INSERT INTO Title
-VALUES(997799,'The Girl with the Dragon Tatoo','Book',57562,616, 19); /* do not copy this one */
-
-
-
+VALUES(997799,'The Girl with the Dragon Tatoo','Book',57562,616, 19); 
 
 INSERT INTO Customer
 VALUES('1396 Briarcliff Road Bolingbrook IL 66810','Chee Kin Chan',0,NULL,24329);
-
 INSERT INTO Customer
 VALUES('1211 Plainfield Road Joliet IL 60540','Ben Brudenell',2,1,29088);
-
 INSERT INTO Customer
 VALUES('1055 E Gartner Road Naperville IL 96139','Simon Wood',1,NULL,29141);
-
 INSERT INTO Customer
 VALUES('2815 Mistflower Lane Naperville IL 60564','Andrew Hamilton',3,NULL,22700);
-
-
 INSERT INTO Customer
 VALUES('1319 N Lake Street Aurora IL 66221','Victoria Lord',1,12,82790);
-
-
 INSERT INTO Customer
 VALUES('4117 Stableford Lane Paris TX','Lara Derham',4,5,56510);
-
-
 INSERT INTO Customer
 VALUES('3536 Scotsdale Circle Wheaton IL','Jeanette Manifold',3,2,77405);
-
-
 INSERT INTO Customer
 VALUES('3019 Naper Boulevard Deering IL','Genevieve McMahon',1,1,5486);
-
-
 INSERT INTO Customer
 VALUES('1600 Pennsylvania Avenue Bartlett IL','Christine Koole',5,NULL,15828);
-
-
 INSERT INTO Customer
 VALUES('411 Centennial Drive Saint Louis MO','Joel Beach',7,11,88683);
 
 
-
-
-
 INSERT INTO Borrowing
 VALUES(1561,96896,'Returned in Good Piece','2004-02-28','2004-03-29');
-
 INSERT INTO Borrowing
 VALUES(86380,87482,'Returned in Good Piece','2009-12-23','2010-01-22');
-
 INSERT INTO Borrowing
 VALUES(17810,47595,'Minor Scratch on inner rim','2017-09-23','2017-11-23');
-
 INSERT INTO Borrowing
 VALUES(38735,26168,'Tear on top right corner on page 74','2000-01-02','2000-02-02');
-
 INSERT INTO Borrowing
 VALUES(43958,22736,'Severe Water Damage','2006-05-31','2006-06-30');
-
 INSERT INTO Borrowing
 VALUES(49471,61180,'Returned in Good Piece','1997-08-25','1997-09-25');
-
 INSERT INTO Borrowing
 VALUES(59500,31947,'Broken into five pieces','1988-04-02','1988-05-02');
-
 INSERT INTO Borrowing
 VALUES(63678,13709,'The disk stops spinning after fourteen minutes of use.','2003-06-21','2003-07-21');
-
 INSERT INTO Borrowing
 VALUES(63815,93665,'Returned in Good Piece','2014-03-16','2014-04-16');
-
 INSERT INTO Borrowing
 VALUES(5095,8151,'Gives a Disk cannot be read error','2013-07-12','2013-10-12');
 
@@ -171,36 +136,24 @@ VALUES(5095,8151,'Gives a Disk cannot be read error','2013-07-12','2013-10-12');
 
 INSERT INTO Reservation
 VALUES(96896,252663,1561,24329,53890,0);
-
 INSERT INTO Reservation
 VALUES(87482,715810,86380,29088,12505,1);
-
 INSERT INTO Reservation
 VALUES(47595,296026,17810,29141,873,38);
-
 INSERT INTO Reservation
 VALUES(26168,243139,38735,22700,18840,4);
-
 INSERT INTO Reservation
 VALUES(22736,609672,43958,82790,57697,5);
-
 INSERT INTO Reservation
 VALUES(61180,52062,49471,56510,55069,10);
-
 INSERT INTO Reservation
 VALUES(31947,307366,59500,77405,46812,7);
-
 INSERT INTO Reservation
 VALUES(13709,753749,63678,5486,3817,0);
-
 INSERT INTO Reservation
 VALUES(93665,733112,63815,15828,89077,3);
-
 INSERT INTO Reservation
 VALUES(8151,973722,5095,88683,53450,9);
-
-
-
 
 
 INSERT INTO Publisher
@@ -223,8 +176,6 @@ INSERT INTO Publisher
 VALUES(42850,733112,63815,'Ininovels', 87);
 INSERT INTO Publisher
 VALUES(43687,973722,5095,'Penguin Books', 19350);
-
-
 INSERT INTO Publisher
 VALUES(9276,887696,29219,'Asgard', 12);
 INSERT INTO Publisher
@@ -247,8 +198,6 @@ INSERT INTO Publisher
 VALUES(90336,997799,57562,'20th Century Fox', 242);
 
 
-
-
 INSERT INTO Author
 VALUES(93423,1561,'Lexie Durbridge',1, 3330);
 INSERT INTO Author
@@ -269,8 +218,6 @@ INSERT INTO Author
 VALUES(42850,63815,'Marc Butler',101, 18679);
 INSERT INTO Author
 VALUES(43687,5095,'John Christie',3, 55780);
-
-
 INSERT INTO Author
 VALUES(9276,29219,'Jack Thompson',22, 38093);
 INSERT INTO Author
@@ -293,10 +240,8 @@ INSERT INTO Author
 VALUES(90336,57562,'Kanye West',8, 37588);
 
 
-
-
 INSERT INTO Book
-VALUES(93423,'Brother Incorporated','Lexie Durbridge',3330, 'American Gods',1561,252663,571610302808,'Science Fiction','2002-04-05');
+VALUES(93423,'Brother Incorporated','Lexie Durbridge',3330, 'American Gods',1561,252663,411571610302,'Science Fiction','2002-04-05');
 INSERT INTO Book
 VALUES(21849,'Oscorp','Andrew Hale',26250, 'One Second After',86380,715810,560801259868,'Dark Fantasy','1609-02-08');
 INSERT INTO Book
@@ -305,7 +250,6 @@ INSERT INTO Book
 VALUES(81793,'Waynetech','Stephen Beeson',19971, 'What is the What',43958,243139,778452652857,'Religious Text','2013-05-09');
 INSERT INTO Book
 VALUES(88994,'Lexcorp','David Bosnich',16745, 'The Last of the Mohicans',49471,609672,385845345557,'Textbook','1963-08-28');
-
 INSERT INTO Book
 VALUES(9276,'Asgard','Jack Thompson',38093, 'Murder in Mesopotamia',84035,887696,874079240539,'Textbook','1989-06-23');
 INSERT INTO Book
@@ -318,7 +262,6 @@ INSERT INTO Book
 VALUES(52088,'Vice','Francis Keske',65212, 'Orthodoxy',39953,801946,937891261365,'Horror','2018-07-04');
 
 
-
 INSERT INTO Movie
 VALUES(85940,'Nova Corps','Simon Hale',35607, 'Wonder Woman',17810,52062,5584534,'Horror','1963-08-28');
 INSERT INTO Movie
@@ -329,8 +272,6 @@ INSERT INTO Movie
 VALUES(42850,'Ininovels','Marc Butler',18679, 'A Few Good Men',63815,733112,9556108,'Action','2015-03-31');
 INSERT INTO Movie
 VALUES(43687,'Penguin Books','John Christie',55780, 'Lawrence of Arabia',5095,973722,9145626,'Courtroom Drama','1899-12-26');
-
-
 INSERT INTO Movie
 VALUES(9276,'Macmillan','Jack Medina',46295, 'Ben-Hur',29219,36325,436152,'Courtroom Drama','1959-11-18');
 INSERT INTO Movie
@@ -344,9 +285,9 @@ VALUES(32661,'20th Century Fox','Kanye West',37588, 'Blues Brothers',87771,95217
 
 
 INSERT INTO Department
-VALUES(0,'1st Floor',90203,17810,52062);
+VALUES(0,'1st Floor',10,17810,52062);
 INSERT INTO Department
-VALUES(19,'2nd Floor',400,59500,307366);
+VALUES(19,'2nd Floor',11,59500,307366);
 INSERT INTO Department
 VALUES(92,'Attic',198,63678,753749);
 INSERT INTO Department
@@ -363,3 +304,5 @@ INSERT INTO Department
 VALUES(94,'1st Floor',110,295,887050);
 INSERT INTO Department
 VALUES(22,'Attic',6128,87771,952173);
+INSERT INTO Department
+VALUES(23,'Attic',18965,87771,952173);
