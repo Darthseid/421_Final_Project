@@ -3,6 +3,32 @@ use Final_Library;
 SELECT AVG(price)
 FROM Item;
 
+ALTER TABLE Reservation /* For third normalization */
+DROP title_id;
+
+ALTER TABLE Publisher /* For third normalization */
+DROP item_id;
+
+ALTER TABLE Department /* For third normalization */
+DROP title_id;
+
+SELECT *
+FROM Media
+LIMIT 1;
+
+SELECT * 
+FROM Reservation
+LIMIT 1;
+
+SELECT *
+FROM Publisher
+LIMIT 1;
+
+SELECT * 
+FROM Department
+LIMIT 1;
+
+
 SELECT Author.author_name, Title.title_name, Title.title_type
 FROM Author
 INNER JOIN Title ON Author.title_id = Title.title_id;
