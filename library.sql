@@ -2,7 +2,7 @@ DROP DATABASE IF EXISTS Final_Library;
 CREATE DATABASE IF NOT EXISTS Final_Library;
 use Final_Library;
 
-DROP TABLE IF EXISTS Item;
+DROP TABLE IF EXISTS Item; /* The main entity that takes up shelf spasce in a library */
 CREATE TABLE Item
 (
 item_id INT(6),
@@ -17,7 +17,7 @@ CONSTRAINT item_pk
 PRIMARY KEY(item_id)
 );
 
-DROP TABLE IF EXISTS Title;
+DROP TABLE IF EXISTS Title; /*Similar to the item table, but there are no duplicate here */
 CREATE TABLE Title
 (
 item_id INT(6),
@@ -33,7 +33,7 @@ PRIMARY KEY(title_id),
 REFERENCES Item(item_id)	
 );
 
-DROP TABLE IF EXISTS Customer;
+DROP TABLE IF EXISTS Customer; /* These are the people who rent books. There are no constraints on them. */
 CREATE TABLE Customer
 (
 address VARCHAR(133),
@@ -46,7 +46,7 @@ CONSTRAINT customer_pk
 PRIMARY KEY(cust_id) 
 );
 
-DROP TABLE IF EXISTS Borrowing;
+DROP TABLE IF EXISTS Borrowing; /* This entity handles renting from the item perspective */
 CREATE TABLE Borrowing
 (
 title_id INT(5),
@@ -57,11 +57,11 @@ return_date date,
 
 CONSTRAINT borrowing_pk
 PRIMARY KEY(borrowing_id) ,
-CONSTRAINT fk_title5_id FOREIGN KEY(title_id)
+CONSTRAINT fk_title5_id FOREIGN KEY(title_id) 
 REFERENCES Title(title_id)
 );
 
-DROP TABLE IF EXISTS Reservation;
+DROP TABLE IF EXISTS Reservation; /* This handles renting from the customer perspective */
 CREATE TABLE Reservation
 (
 borrowing_id INT(5),
@@ -81,7 +81,7 @@ CONSTRAINT fk_customer0_id FOREIGN KEY(cust_id)
 REFERENCES Customer(cust_id)
 );
 
-DROP TABLE IF EXISTS Publisher;
+DROP TABLE IF EXISTS Publisher; /* Publisher and studio mean the same thing in this context. */
 CREATE TABLE Publisher
 (
 publisher_id INT(5),
@@ -96,7 +96,7 @@ CONSTRAINT fk_title0_id FOREIGN KEY(title_id)
 REFERENCES Title(title_id)
 );
 
-DROP TABLE IF EXISTS Author;
+DROP TABLE IF EXISTS Author; /*Creator would be a more apt name. They are tied to their publishers for unique foreign key reasons.*/
 CREATE TABLE Author
 (
 publisher_id INT(5),
@@ -113,7 +113,7 @@ CONSTRAINT fk_publisher0_id FOREIGN KEY(publisher_id)
 REFERENCES Publisher(publisher_id)
 );
 
-DROP TABLE IF EXISTS Book;
+DROP TABLE IF EXISTS Book; 
 CREATE TABLE Book
 (
 publisher_id INT(5),
@@ -129,7 +129,7 @@ publishing_date date,
 
 CONSTRAINT book_pk
 PRIMARY KEY(book_id) ,
-CONSTRAINT fk_title2_id FOREIGN KEY(title_id)
+CONSTRAINT fk_title2_id FOREIGN KEY(title_id) /* Each foreign key must be unique. */
 REFERENCES Title(title_id),
 CONSTRAINT fk_publisher1_id FOREIGN KEY(publisher_id)
 REFERENCES Publisher(publisher_id),
@@ -139,7 +139,7 @@ CONSTRAINT fk_author0_id FOREIGN KEY(author_id)
 REFERENCES Author(author_id)
 );
 
-DROP TABLE IF EXISTS Movie;
+DROP TABLE IF EXISTS Movie; /*This is the entity where author, publisher, and title meets. */
 CREATE TABLE Movie
 (
 publisher_id INT(5),
@@ -149,7 +149,7 @@ author_id INT(5),
 title_name VARCHAR(120),
 title_id INT(5),
 item_id INT(6),
-movie_id INT(13),
+movie_id INT(6), 
 genre VARCHAR(25),
 publishing_date date,
 
@@ -165,11 +165,11 @@ CONSTRAINT fk_author1_id FOREIGN KEY(author_id)
 REFERENCES Author(author_id)
 );
 
-DROP TABLE IF EXISTS Department;
+DROP TABLE IF EXISTS Department; 
 CREATE TABLE Department
 (
 department_id INT(2),
-location VARCHAR(60),
+location VARCHAR(60), /* This is assuming the library is one building */
 item_count INT(6),
 title_id INT(5),
 item_id INT(6),
