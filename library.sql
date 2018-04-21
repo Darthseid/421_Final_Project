@@ -113,8 +113,8 @@ CONSTRAINT fk_publisher0_id FOREIGN KEY(publisher_id)
 REFERENCES Publisher(publisher_id)
 );
 
-DROP TABLE IF EXISTS Book; 
-CREATE TABLE Book
+DROP TABLE IF EXISTS Media; /*This is the entity where author, publisher, and title meets. */
+CREATE TABLE Media
 (
 publisher_id INT(5),
 publisher_name VARCHAR(55),
@@ -123,12 +123,12 @@ author_id INT(5),
 title_name VARCHAR(120),
 title_id INT(5),
 item_id INT(6),
-book_id bigint(13),
+media_id bigint(13),
 genre VARCHAR(25),
 publishing_date date,
 
-CONSTRAINT book_pk
-PRIMARY KEY(book_id) ,
+CONSTRAINT media_pk
+PRIMARY KEY(media_id),
 CONSTRAINT fk_title2_id FOREIGN KEY(title_id) /* Each foreign key must be unique. */
 REFERENCES Title(title_id),
 CONSTRAINT fk_publisher1_id FOREIGN KEY(publisher_id)
@@ -136,32 +136,6 @@ REFERENCES Publisher(publisher_id),
 CONSTRAINT fk_item2_id FOREIGN KEY(item_id)
 REFERENCES Item(item_id),
 CONSTRAINT fk_author0_id FOREIGN KEY(author_id)
-REFERENCES Author(author_id)
-);
-
-DROP TABLE IF EXISTS Movie; /*This is the entity where author, publisher, and title meets. */
-CREATE TABLE Movie
-(
-publisher_id INT(5),
-publisher_name VARCHAR(55),
-author_name VARCHAR(45),
-author_id INT(5),
-title_name VARCHAR(120),
-title_id INT(5),
-item_id INT(6),
-movie_id INT(6), 
-genre VARCHAR(25),
-publishing_date date,
-
-CONSTRAINT movie_pk
-PRIMARY KEY(movie_id) ,
-CONSTRAINT fk_title3_id FOREIGN KEY(title_id)
-REFERENCES Title(title_id),
-CONSTRAINT fk_publisher2_id FOREIGN KEY(publisher_id)
-REFERENCES Publisher(publisher_id),
-CONSTRAINT fk_item3_id FOREIGN KEY(item_id)
-REFERENCES Item(item_id),
-CONSTRAINT fk_author1_id FOREIGN KEY(author_id)
 REFERENCES Author(author_id)
 );
 
