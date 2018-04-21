@@ -21,7 +21,7 @@ HAVING Movie.genre = 'Horror';
 
 SELECT location,audiobook
 FROM Department
-WHERE location = 'Street';
+WHERE location = 'Street'; /* This is an invalid query */
 
 ALTER TABLE Customer
 ADD alerted boolean;
@@ -45,16 +45,6 @@ FROM Customer;
 SELECT 120000-SUM(item_count)
 FROM Department AS Remaining_items;
 
-ALTER TABLE Department
-ADD CONSTRAINT max_value CHECK(item_count < 18964); /* Won't Work */
-
-UPDATE Department
-SET item_count = 19000
-WHERE department_id = 0;
-
-ALTER TABLE Customer
-ADD CONSTRAINT borrow_limit CHECK(borrow_count <= 8);  /* Won't Work*/
-
 SELECT Title.title_name, Title.title_type, Borrowing.record, Title.copy_amount
 FROM Borrowing
 INNER JOIN Title
@@ -64,3 +54,13 @@ WHERE record != 'Returned in Good Piece';
 UPDATE Title
 SET  copy_amount = 2
 WHERE title_name = 'The Shawshank Redemption';
+
+DROP VIEW Varied_Inventory; 
+
+CREATE VIEW Varied_Inventory AS
+SELECT title_name, copy_amount 
+FROM Title
+ORDER BY copy_amount ASC;
+
+SELECT * FROM Varied_Inventory;
+
