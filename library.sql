@@ -126,6 +126,7 @@ item_id INT(6),
 media_id bigint(13),
 genre VARCHAR(25),
 publishing_date date,
+medium_type VARCHAR(35),
 
 CONSTRAINT media_pk
 PRIMARY KEY(media_id),
@@ -150,8 +151,6 @@ item_id INT(6),
 
 CONSTRAINT department_pk
 PRIMARY KEY(department_id) ,
-CONSTRAINT fk_title4_id FOREIGN KEY(title_id)
-REFERENCES Title(title_id),
 CONSTRAINT fk_item4_id FOREIGN KEY(item_id)
 REFERENCES Item(item_id)
 );
