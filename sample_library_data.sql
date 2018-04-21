@@ -45,47 +45,47 @@ VALUES(997799,'2015-09-02',1,55.21,0,'Top Shelf', 0);
 
 
 INSERT INTO Title
-VALUES(973722,'American Gods','Media',1561,645321,6);
+VALUES(973722,'American Gods','Book',1561,645321,6);
 INSERT INTO Title
-VALUES(733112,'One Second After','Media',86380,543, 7);
+VALUES(733112,'One Second After','Book',86380,543, 7);
 INSERT INTO Title
-VALUES(753749,'Wonder Woman','Media',17810,NULL,2);
+VALUES(753749,'Wonder Woman','Video Game',17810,NULL,2);
 INSERT INTO Title
-VALUES(307366,'A Farewell To Arms','Media',38735,98, 5);
+VALUES(307366,'A Farewell To Arms','Book',38735,98, 5);
 INSERT INTO Title
-VALUES(52062,'What is the What','Media',43958,392, 3);
+VALUES(52062,'What is the What','Television Series',43958,392, 3);
 INSERT INTO Title
-VALUES(609672,'The Last of the Mohicans','Media',49471,255,8);
+VALUES(609672,'The Last of the Mohicans','Fan Fiction',49471,255,8);
 INSERT INTO Title
-VALUES(243139,'The Shawshank Redemption','Media',59500,NULL, 1);
+VALUES(243139,'The Shawshank Redemption','Movie',59500,NULL, 1);
 INSERT INTO Title
-VALUES(296026,'Major League','Media',63678,NULL, 4);
+VALUES(296026,'Major League','Movie',63678,NULL, 4);
 INSERT INTO Title
-VALUES(715810,'A Few Good Men','Media',63815,NULL, 1);
+VALUES(715810,'A Few Good Men','Audiobook',63815,NULL, 1);
 INSERT INTO Title
-VALUES(252663,'Lawrence of Arabia','Media',5095,NULL, 3);
+VALUES(252663,'Lawrence of Arabia','Album',5095,NULL, 3);
 INSERT INTO Title
-VALUES(887696,'Ben-Hur','Media',29219,NULL, 11);
+VALUES(887696,'Ben-Hur','Movie',29219,NULL, 11);
 INSERT INTO Title
-VALUES(884303,'Stanford Prison Experiment','Media',98406,NULL, 1);
+VALUES(884303,'Stanford Prison Experiment','Magazine',98406,NULL, 1);
 INSERT INTO Title
-VALUES(880124,'The Good, The Bad, and The Ugly','Media',93297,NULL, 5);
+VALUES(880124,'The Good, The Bad, and The Ugly','Play',93297,NULL, 5);
 INSERT INTO Title
-VALUES(594280,'Amistad','Media',295,NULL, 1);
+VALUES(594280,'Amistad','Movie',295,NULL, 1);
 INSERT INTO Title
-VALUES(801946,'Blues Brothers','Media',87771,NULL, 6);
+VALUES(801946,'Blues Brothers','Movie',87771,NULL, 6);
 INSERT INTO Title
-VALUES(36325,'Murder in Mesopotamia','Media',84035,56, 35);
+VALUES(36325,'Murder in Mesopotamia','Movie',84035,56, 35);
 INSERT INTO Title
-VALUES(916506,'Heart of Darkness','Media',43806,176, 24);
+VALUES(916506,'Heart of Darkness','Movie',43806,176, 24);
 INSERT INTO Title
-VALUES(826524,'Moneyball','Media',16369,208, 2);
+VALUES(826524,'Moneyball','Movie',16369,208, 2);
 INSERT INTO Title
-VALUES(887050,'How to Win Friends and Influence People','Media',1446,127, 17);
+VALUES(887050,'How to Win Friends and Influence People','Book',1446,127, 17);
 INSERT INTO Title
-VALUES(952173,'Orthodoxy','Media',39953,188, 1);
+VALUES(952173,'Orthodoxy','Book',39953,188, 1);
 INSERT INTO Title
-VALUES(997799,'The Girl with the Dragon Tatoo','Media',57562,616, 19); 
+VALUES(997799,'The Girl with the Dragon Tatoo','Book',57562,616, 19); 
 
 INSERT INTO Customer
 VALUES('1396 Briarcliff Road Bolingbrook IL 66810','Chee Kin Chan',0,NULL,24329);
