@@ -22,7 +22,7 @@ CREATE TABLE Title
 (
 item_id INT(6),
 title_name VARCHAR(120),
-title_type VARCHAR(11),
+title_type VARCHAR(35),
 title_id INT(5),
 page_number INT(6),
 copy_amount INT(5),
@@ -126,7 +126,7 @@ item_id INT(6),
 media_id bigint(13),
 genre VARCHAR(25),
 publishing_date date,
-medium_type VARCHAR(35),
+title_type VARCHAR(35),
 
 CONSTRAINT media_pk
 PRIMARY KEY(media_id),
